@@ -1,0 +1,18 @@
+{
+  "extends": ["./tsconfig.base.json"],
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "lib": ["ES2019", "DOM"],
+    "customConditions": ["browser"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "types": [],
+    "allowArbitraryExtensions": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "references": [{ "path": "./tsconfig.default.json" }],
+  "include": ["../packages/*/src/**/*.browser.ts"]
+}

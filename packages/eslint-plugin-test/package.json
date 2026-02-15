@@ -1,0 +1,23 @@
+{
+  "name": "@biscuittin/eslint-plugin-format",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Format various languages with formatters in ESLint, a fork of Antfu's, with support for configuration files.",
+  "author": "Biscuit Tin <opensource@biscuitt.in>",
+  "license": "MIT",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": "./src/index.ts"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": false
+    }
+  },
+  "devDependencies": {
+    "eslint": "^9.20.0"
+  }
+}

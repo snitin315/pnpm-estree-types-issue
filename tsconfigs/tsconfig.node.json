@@ -1,0 +1,21 @@
+{
+  "extends": ["./tsconfig.base.json"],
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "customConditions": ["node"],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "allowJs": true,
+    "outDir": "./dist"
+  },
+  "references": [{ "path": "./tsconfig.default.json" }],
+  "include": [
+    "../eslint.config.ts",
+    "../packages/*/src/**/*.node.ts",
+    "../packages/eslint-parser-plain/src",
+    "../packages/eslint-plugin-format/src"
+  ]
+}
