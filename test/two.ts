@@ -1,12 +1,11 @@
 import type { ESLint } from 'eslint'
 
-import packagePlugin from '../package.json'
 import test from './rules/test.js'
 
 export default {
   meta: {
-    name: packagePlugin.name,
-    version: packagePlugin.version,
+    name: 'test',
+    version: '1.0.0',
   },
   rules: {
     test,
